@@ -6,6 +6,7 @@
     <title>form|assignment</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href="./css/style.css">
+    <link rel="icon" href="https://gomycode-learn.azureedge.net/assets/icons/favicon.ico" type="image/ico"/>
     <script src='main.js'></script>
 </head>
 <body>
@@ -13,16 +14,16 @@
         <div id="f1">
             <header><img src="./images/gomycodereal.png" alt="" width="200"></header>
             <div class="user name">
-                <label for="">first name:</label>
+                <label for="">First Name:</label>
             <input type="text" placeholder="John">
-            <label for="">Last name:</label>
+            <label for="">Last Name:</label>
             <input type="text" placeholder="Doe">
             </div>
             <div class="user contact">
                 <label for="">Email:</label>
             <input type="email" placeholder="Johndoe@gmail.com">
-            <label for="">phone number:</label>
-            <input type="tel" placeholder="081xxxxxxxx" pattern="">
+            <label for="">Phone Number:</label>
+            <input type="tel" placeholder="081xxxxxxxx" pattern="[0-9]{11}" required>
             </div>
             <div id="gender">
                 <label for="">Gender:</label>
