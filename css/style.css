@@ -8,7 +8,7 @@
 
 /* general code */
 body{
-    font: 15px;
+    /* font: 15px; */
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -31,7 +31,7 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    width: 25%;
     height: 95%;
     padding: 20px;
     margin: auto;
@@ -63,7 +63,6 @@ form{
 }
 
 #payment input{
-    margin-top: px;
     margin-right: 5px;
     margin-bottom: 10px;
 }
@@ -84,4 +83,82 @@ button:hover{
     background-color: #601818;
     cursor: pointer;
     color: #fff;
+}
+
+@media (max-width:768px) {
+  
+    img{
+        width: 150px;
+    }
+
+    form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: scroll;
+    }
+    
+    #f1{
+        background-color: hsl(218, 44%, 22%);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 53%;
+        height: 95%;
+        /* padding: 20px; */
+        margin: auto;
+        border-radius: 20px;
+        /* overflow: scroll; */
+    }
+    
+    /* user name & contact info */
+    .user, #gender{
+        margin: 5px 0;
+        margin-bottom: 10px;
+        
+    }
+    
+    .user label, #gender label{
+        padding-left: 10px;
+    }
+    .user input, #gender select{ 
+        display: block;
+        padding-left: 20px;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+    }
+    
+    /* user course & payment input */
+    #web input{
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    
+    #payment input{
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+    
+    /* button */
+    button{
+        margin-top: 10px;
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #09e55d;
+        border: none;
+    }
+    
+    button:hover{
+        background-color: #601818;
+        cursor: pointer;
+        color: #fff;
+}
 }
